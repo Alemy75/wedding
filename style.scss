@@ -28,6 +28,9 @@ body {
     font-size: 16px;
     // background-color: #cccccc20;
     font-family: "Playfair Display", sans-serif;
+    @media (max-width: 450px) {
+        font-size: 13px;
+    }
 }
 
 .container {
@@ -185,3 +188,24 @@ table.iksweb th {
         }
     }
 }
+
+
+.hidden {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.hidden2 {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.shown {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+

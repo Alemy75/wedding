@@ -1,142 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Приглашение на свадьбу</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="title-main">
-                <span>Максим</span>
-                <span class="rings" style="font-size: 1.5rem">∞</span>
-                <span>Полина</span>
-            </div>
-            <div class="we"></div>
-            <div class="block">
-                <div class="title">Родные и друзья!</div>
-                <div class="text">
-                    В нашей жизни произойдет очень важное событие - наша
-                    свадьба! Мы верим и надеемся, что этот день станет красивым
-                    началом долгой и счастливой истории.
-                </div>
-            </div>
-            <div class="paint"></div>
-            <div class="block">
-                <div class="title">Ждем вас</div>
-                <div class="text">22 декабря 2023 в 14:00</div>
-                <table class="iksweb">
-                    <thead>
-                        <tr>
-                            <td>Пн</td>
-                            <td>Вт</td>
-                            <td>Ср</td>
-                            <td>Чт</td>
-                            <td>Пт</td>
-                            <td>Сб</td>
-                            <td>Вс</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>8</td>
-                            <td>9</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>12</td>
-                            <td>13</td>
-                            <td>14</td>
-                            <td>15</td>
-                            <td>16</td>
-                            <td>17</td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td>19</td>
-                            <td>20</td>
-                            <td>21</td>
-                            <td>
-                                <span class="selected"
-                                    >22
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z"
-                                            stroke="currentColor"
-                                            stroke-width="1"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </svg>
-                                </span>
-                            </td>
-                            <td>23</td>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td>26</td>
-                            <td>27</td>
-                            <td>28</td>
-                            <td>29</td>
-                            <td>30</td>
-                            <td>31</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="block">
-                <div class="title">Место проведения</div>
-                <div class="text addres">
-                    Ресторан “Браво” ул. Школьный проезд, д. 17
-                </div>
-                <a
-                    href="https://yandex.ru/maps/org/bravo/1056078509/?indoorLevel=1&ll=39.958375%2C57.647516&z=17.06"
-                    class="btn"
-                    target="_blank"
-                    >~ Посмотреть на карте ~</a
-                >
-            </div>
-            <div class="block">
-                <div class="title">Дресс-код</div>
-                <div class="text">
-                    Наша свадьба будет в стиле 90-х. Будем очень благодарны,
-                    если Вы поддержите нашу идею своим нарядом.
-                </div>
-            </div>
 
-            <div class="block">
-                <div class="title">Ждем вас через</div>
-                <div class="text timer" id="timer"></div>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приглашение на свадьбу</title>
+</head>
 
-            <div class="end">
-                <div class="block">
-                    <div class="text">
-                        Просим подтвердить своё присутствие до 05 декабря.
-                    </div>
-                    <div class="text">С любовью, <br>Полина и Максим</div>
-                </div>
+<body>
+    <div class="container">
+        <div class="title-main">
+            <span>Максим</span>
+            <span class="rings" style="font-size: 1.5rem">∞</span>
+            <span>Полина</span>
+        </div>
+        <div class="we "></div>
+        <div class="block hidden">
+            <div class="title">Родные и друзья!</div>
+            <div class="text">
+                В нашей жизни произойдет очень важное событие - наша
+                свадьба! Мы верим и надеемся, что этот день станет красивым
+                началом долгой и счастливой истории.
             </div>
         </div>
-        <script type="module" src="/main.js"></script>
-    </body>
+        <div class="paint hidden"></div>
+        <div class="block hidden hidden2">
+            <div class="title">Ждем вас</div>
+            <div class="text">22 декабря 2023 в 14:00</div>
+            <table class="iksweb">
+                <thead>
+                    <tr>
+                        <td>Пн</td>
+                        <td>Вт</td>
+                        <td>Ср</td>
+                        <td>Чт</td>
+                        <td>Пт</td>
+                        <td>Сб</td>
+                        <td>Вс</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>
+                            <span class="selected">22
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M15.7 4C18.87 4 21 6.98 21 9.76C21 15.39 12.16 20 12 20C11.84 20 3 15.39 3 9.76C3 6.98 5.13 4 8.3 4C10.12 4 11.31 4.91 12 5.71C12.69 4.91 13.88 4 15.7 4Z"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="block hidden">
+            <div class="title">Место проведения</div>
+            <div class="text addres">
+                Ресторан “Браво” ул. Школьный проезд, д. 17
+            </div>
+            <a href="https://yandex.ru/maps/org/bravo/1056078509/?indoorLevel=1&ll=39.958375%2C57.647516&z=17.06"
+                class="btn" target="_blank">~ Посмотреть на карте ~</a>
+        </div>
+        <div class="block hidden hidden2">
+            <div class="title">Дресс-код</div>
+            <div class="text">
+                Наша свадьба будет в стиле 90-х. Будем очень благодарны,
+                если Вы поддержите нашу идею своим нарядом.
+            </div>
+        </div>
+
+        <div class="block hidden">
+            <div class="title">Ждем вас через</div>
+            <div class="text timer" id="timer"></div>
+        </div>
+
+        <div class="end hidden hidden2">
+            <div class="block">
+                <div class="text">
+                    Просим подтвердить своё присутствие до 05 декабря.
+                </div>
+                <div class="text">С любовью, <br>Полина и Максим</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
 </html>
