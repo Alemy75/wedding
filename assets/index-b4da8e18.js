@@ -3,4 +3,4 @@
     <div><span>${o}</span> часов</div>
     <div><span>${d}</span> минут</div>
     <div><span>${a}</span> секунд</div>
-  `,e<0&&(clearInterval(n),c.innerHTML="<h2>Таймер истек!</h2>")}}document.addEventListener("DOMContentLoaded",()=>{l(),document.querySelectorAll(".hidden").forEach(n=>{document.addEventListener("scroll",()=>{n.getBoundingClientRect().top<window.outerHeight-n.getBoundingClientRect().top/2?n.classList.add("shown"):n.classList.remove("shown")})})});
+  `,e<0&&(clearInterval(n),c.innerHTML="<h2>Таймер истек!</h2>")}}document.addEventListener("DOMContentLoaded",()=>{l(),document.querySelectorAll(".hidden").forEach(n=>{document.addEventListener("scroll",()=>{n.getBoundingClientRect().top<window.outerHeight-n.getBoundingClientRect().top/2?n.classList.add("shown"):n.classList.remove("shown")})}),setTimeout(()=>{document.body.classList.add("shown")},1e3)});
